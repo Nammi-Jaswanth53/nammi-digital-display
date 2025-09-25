@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Github, Linkedin, ArrowDown } from "lucide-react";
 import heroImage from "@/assets/hero-bg.jpg";
+import jaswanthPhoto from "@/assets/jaswanth-photo.jpg";
 
 const Hero = () => {
   const scrollToSection = (sectionId: string) => {
@@ -29,7 +30,19 @@ const Hero = () => {
       {/* Content */}
       <div className="relative z-20 text-center px-4 sm:px-6 lg:px-8 max-w-6xl mx-auto">
         <div className="space-y-8 animate-slide-up">
-          <div className="space-y-4">
+          <div className="space-y-6">
+            {/* Profile Photo */}
+            <div className="flex justify-center mb-8">
+              <div className="relative">
+                <img 
+                  src={jaswanthPhoto} 
+                  alt="Jaswanth Nammi" 
+                  className="w-40 h-40 md:w-48 md:h-48 rounded-full object-cover border-4 border-primary/30 shadow-2xl hover:scale-105 transition-transform duration-300"
+                />
+                <div className="absolute inset-0 rounded-full bg-gradient-to-tr from-primary/20 to-transparent"></div>
+              </div>
+            </div>
+            
             <h1 className="hero-title">
               <span className="gradient-text">Jaswanth</span>
               <br />
